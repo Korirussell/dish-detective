@@ -14,7 +14,7 @@ from ultralytics import YOLO
 model_path = 'models/yolov8n.pt'
 cam_source = ''
 min_thresh = 
-resW, resH
+resW, resH = 640, 480
 record = 
 
 # Define box coordinates where we want to look for dishes we are going to use setup_roi.py to find this 
@@ -60,4 +60,13 @@ fps_avg_len = 200
 
 
 while true: 
+    # grab frame
+    # crop this frame to the sink zone, crop numpy array using opencv
+    # now give cropped image to the model, ultralytics yolo predict iamge
+    #loop through results object to find all boxes
+    #Filter & draw
+
+    #motion detection ( the core of this project )
+    # comparing before and after frams 
+    
 
